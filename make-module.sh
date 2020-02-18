@@ -20,7 +20,6 @@ function autobuild {
 		# add it to the list of targets.
 		if [ "$SOURCE" -nt "$TARGET" ]; then
 			printf "%q\n" "$TARGET" >>"$LIST_FILE" || return 1
-			echo "Using target \"$TARGET\""
 		elif [ -n "$TARGET" ]; then
 			echo "Ignoring up-to-date target \"$TARGET\""
 		fi
