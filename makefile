@@ -41,4 +41,4 @@ bin/%: build/%/main.o
 	@$(CPPC) $(CC_WARN) $(CC_PROFILE) $(CC_INCLUDE_PATH) \
 		-I"${CC_MODULE_DIR}" \
 		$(CC_LIB_PATH) $(CC_LINK_OPTIONS) \
-		$(CC_LINK) "$@" $(shell find build/ -name '*.o')
+		$(CC_LINK) "$@" "$<" $(shell find build/ -name '*.o' -not -name 'main.o')
