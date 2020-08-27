@@ -1,3 +1,11 @@
+## Deprecated
+
+I'm not maintaining this anymore, as I've evolved as a programmer and now
+use a different approach for C++ projects; I will delete the repository in
+a few months since writing this.  
+If you want me to keep it up or you want
+its ownership, send me an email or something.
+
 # Modular C++
 
 This is a simple template for modular C++ projects.  
